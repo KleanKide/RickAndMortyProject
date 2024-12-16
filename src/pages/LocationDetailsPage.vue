@@ -1,6 +1,6 @@
 <template>
     <div v-if="loading" class="loading">
-      <p>Loading location details...</p>
+      <p>Loading...</p>
     </div>
     <div v-else-if="error" class="error">
       <p>{{ error }}</p>
@@ -62,6 +62,7 @@
   .loading, .error {
     text-align: center;
     margin: 50px 0;
+    color: white;
   }
   
   .location-details {
